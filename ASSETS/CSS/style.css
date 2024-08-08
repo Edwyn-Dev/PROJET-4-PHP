@@ -1,0 +1,196 @@
+@font-face {
+    font-family: 'custom';
+    src: url('../FONTS/Rajdhani-Regular.ttf');
+}
+
+* {
+    font-family: 'custom';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #fff;
+    background-image: url('../IMG/BG.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333333a7;
+    border-radius: 0 0 1rem 1rem;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+#header {
+    color: white;
+}
+
+#header img {
+    width: 2rem;
+    filter: invert();
+}
+
+button {
+    transition: all 0.5s;
+}
+
+
+.container {
+    gap: 1rem;
+    width: 90%;
+    max-width: 600px;
+    margin: 20px 0;
+    padding: 20px;
+    animation: fadeIn 1s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-randos {
+    background-color: #333333a7;
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+    max-height: 220px;
+    overflow: auto;
+    border-radius: 1rem;
+}
+
+td {
+    border-radius: 1rem;
+    animation: fadeIn 1s ease-in-out;
+    color: #fff;
+}
+
+.update button,
+.delete button {
+    font-size: 20px;
+    color: #fff;
+    padding: 10px;
+    border-radius: 1rem;
+    border-style: none;
+    font-weight: bolder;
+}
+
+.update button {
+    background-color: rgb(27, 152, 27);
+}
+
+.delete button {
+    background-color: rgb(152, 27, 27);
+}
+
+a {
+    text-decoration: none;
+}
+
+.button-login,
+.button-create {
+    color: #333;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-style: none;
+    border-radius: 5px;
+    animation: fadeIn 1s ease-in-out;
+    transition: all 0.5s;
+}
+
+.button-logout {
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #961e1e;
+    border-style: none;
+    border-radius: 5px;
+    animation: fadeIn 1s ease-in-out;
+    transition: all 0.5s;
+}
+
+button:hover {
+    filter: opacity(50%);
+}
+
+input[type="submit"] {
+    border-radius: 1rem;
+    border: none;
+    background-color: #333333a7;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #202020;
+    transform: scale(1.1);
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.tableau_randos {
+    text-align: center;
+    padding: 10px;
+}
+
+.tableau_randos td {
+    width: calc(100% / 7);
+}
+
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 2px solid #333;
+    color: #333;
+    font-size: 16px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333333a7;
+    border-radius: 1rem 1rem 0 0;
+    text-align: center;
+}
+
+#footer {
+    color: white;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
